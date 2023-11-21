@@ -26,9 +26,10 @@ Training your own Barlow Twins GAN on Pokemnon dataset using 8 GPUs:
 python train.py --outdir=./training-runs/ --cfg=fastgan_lite --data=./data/pokemon256.zip \
   --gpus=8 --batch=64 --mirror=1 --snap=50 --batch-gpu=8 --kimg=10000
 ```
-```--batch``` specifies the overall batch size, ```--batch-gpu``` specifies the batch size per GPU.  If you use fewer GPUs, the training loop will automatically accumulate gradients, until the overall batch size is reached.
+```--batch``` specifies the overall batch size, ```--batch-gpu``` specifies the batch size per GPU.
 
 We train with a lightweight version of FastGAN by default (```--cfg=fastgan_lite```).
+
 Samples and metrics are saved in ```outdir```. To monitor the training progress, you can inspect fid50k_full.json or run tensorboard in training-runs.
 
 
