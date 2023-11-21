@@ -30,7 +30,7 @@ python train.py --outdir=./training-runs/ --cfg=fastgan_lite --data=./data/pokem
 
 We train with a lightweight version of FastGAN by default (```--cfg=fastgan_lite```).
 
-Samples and metrics are saved in ```outdir```. To monitor the training progress, you can inspect fid50k_full.json or run tensorboard in training-runs.
+Samples and metrics are saved in ```outdir```. To monitor the training progress, you can inspect ```fid50k_full.json``` or run tensorboard in training-runs.
 
 
 ## Acknowledgemnets
