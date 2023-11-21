@@ -28,7 +28,7 @@ python train.py --outdir=./training-runs/ --cfg=fastgan_lite --data=./data/pokem
 ```
 ```--batch``` specifies the overall batch size, ```--batch-gpu``` specifies the batch size per GPU.  If you use fewer GPUs, the training loop will automatically accumulate gradients, until the overall batch size is reached.
 
-We train with a lightweight version of FastGAN (```--cfg=fastgan_lite```).
+We train with a lightweight version of FastGAN by default (```--cfg=fastgan_lite```).
 Samples and metrics are saved in ```outdir```. To monitor the training progress, you can inspect fid50k_full.json or run tensorboard in training-runs.
 
 
